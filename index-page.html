@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mini Project</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+
+      
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+
+
+	<style type="text/css">
+        *, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+        
+		body
+		{
+			overflow-x:hidden ;
+            display: block;
+		}
+		.navbar
+		{
+			background-color:#029d9d;
+			overflow-x: hidden;
+		}
+		
+		.navbar-brand
+		{
+			color: white;
+			font-size: 28px;
+			font-weight: bold;
+			pointer-events: none;
+			font-variant: small-caps;
+		}
+		.nav-link
+		{
+			color: white;
+              }
+		.square
+		{
+			
+			animation: rotate 8s linear infinite;
+               animation-duration: 8s;
+               animation-timing-function: linear;
+               animation-delay: 0s;
+               animation-iteration-count: infinite;
+               animation-direction: normal;
+               animation-fill-mode: none;
+               animation-play-state: running;
+               animation-name: rotate;
+    			
+		}
+		@keyframes rotate
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		.btnn
+		{
+			background-color:#029d9d;
+		}
+		.btnn:hover
+		{
+			background-color:#white;
+			border: 2px solid #029d9d;
+			color: black;
+		}
+		.btnnn
+		{
+			border:2px solid #b7b7b7;
+			font-weight:500;
+		}
+		.btnnn:hover
+		{
+			border:3px solid #029d9d;
+			
+		}
+		.destination-list 
+		{
+    			list-style-type: none;
+		}
+		.destination-card {
+    			position: relative;
+    			border-radius: var(--radius-6);
+    			overflow: hidden;
+		}
+		.destination-card .card-content {
+               position: absolute;
+    			bottom: 0;
+    			left: 0;
+    			width: 100%;
+    			padding: 15px;
+    			z-index: 1;
+		}
+		.tour1
+		{
+			transition: transform .2s;
+		}
+		.tour1:hover
+		{
+	         transform: scale(1.03);
+		}
+		.card-subtitle
+		{
+			color: #fcc603;
+			font-family: Brush Script MT;
+			font-size: 26px;
+		}
+		.card-title
+          {
+          	color: white;
+          	font-family: ff-abril-fatface;
+          	font-weight: bold;
+          	font-size: 40px;
+          }
+          
+          .card-text:hover{
+            color:#029d9d;
+            cursor: pointer;
+          }   
+          .card
+          {
+          	box-shadow: 1px 1px 15px #888;
+          	border: none;
+          }
+          .card-badge {
+    				position: absolute;
+    				top: 10px;
+    				left: 10px;
+    				background-color: #fcc603;
+    				color: white;
+    				padding: 10px 10px;
+    				border-radius: 6px;
+    				font-weight: bold;
+			}     
+			.card-badge1 {
+    				position: absolute;
+    				bottom: 129px;
+    				left: 18px;
+    				background-color:#029d9d;
+    				color: white;
+    				padding: 7px 11px;
+    				border-radius: 6px;
+    				font-weight: bold;
+			} 
+			.card-badge2 {
+    				position: absolute;
+    				bottom: 129px;
+    				left: 189px;
+    				background-color: #fcc603;
+    				color: white;
+    				padding: 4px 11px;
+    				border-radius: 6px;
+    				font-weight: bold;
+			} 
+                
+
+               .material-symbols-outlined {
+  						font-variation-settings:
+  						'FILL' 1,
+  						'wght' 400,
+  						'GRAD' 0,
+  						'opsz' 48
+						}
+
+              .rounded-icon
+              {
+              	    background-color: #029d9d;
+                   font-size: 23px;
+    				padding: 12px;
+    				border-radius: 50%;
+    				margin-top: 5px;
+    			
+              }
+               .rounded-icon1
+              {
+              	background-color: #029d9d;
+                   font-size: 23px;
+    				padding: 12px;
+    				border-radius: 50%;
+    				margin-top: 5px;
+    			
+              }
+              .rounded-icon2
+              {
+              	background-color: #029d9d;
+                   font-size: 23px;
+    				padding: 12px;
+    				border-radius: 50%;
+    				margin-top: 5px;
+              }
+			   
+             .slider-badge
+             {
+             	position: absolute;
+    				bottom: 10px;
+    				left: 18px;
+    				background-color:#029d9d;
+    				color: white;
+    				padding: 7px 11px;
+    				border-radius: 6px;
+    				font-weight: bold;
+             }
+             .book-btn
+             {
+             	    background-color: red;
+    				position: absolute;
+    				right: 10px;
+             }
+             .booking-btn
+             {
+             	background-color:#029d9d;
+             	color: white;
+             }
+             
+             .booking-btn:hover
+             {
+             	border: 2px solid #029d9d;
+             }
+             .footer
+             {
+             	background-image: url("footer-bg.png");
+             	background-repeat: no-repeat;
+		        background-size: cover;
+    			background-position: center;
+    			padding-block: 60px;
+    			background-color: #17233f;
+    			color: white;
+
+             }
+             .footer-list
+             {
+             	    display: block;
+                   list-style-type:none;
+                       line-height: 35px;
+              }
+              #footer-link
+              {
+              	color: white;
+              	text-decoration: none;
+              	font-family: arial;
+              }
+               #footer-link:hover
+              {
+              	 text-decoration: underline;
+              }
+              .newsletter-form {
+                 position: relative;
+                 display: flex;
+			}
+		.newsletter-input {
+                 background:white;
+                 border-radius: 6px;
+                 padding: 2px;
+                 color: black;
+                 outline: 0;
+                 width: 112px;
+              }
+           .newsletter-form .footer-btn {
+                
+                 background-color:#029d9d;
+
+             }
+             .social-link{
+                 font-size: 17px;
+                 background-color:#414d62;
+                 padding: 10px;
+                 border-radius: 66%;
+              }
+              .social-link:hover{
+                 background-color:#029d9d;
+              }
+              .copyright-link
+              {
+              	color: white;
+              	text-decoration: underline;
+              	
+              }
+              .copyright-link:hover
+              {
+              	text-decoration: none;
+              	color: white;
+              }
+              #myBtn {
+                    display: none;
+                    position: fixed;
+                    bottom: 10px;
+                    right: 36px;
+                    z-index: 91;
+                    font-size: 1px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    cursor: pointer;
+                    padding: 12px;
+                    border-radius: 4px;
+                    background-color: #029d9d;
+                  }
+              .custom-tooltip {
+                    --bs-tooltip-bg:#029d9d;
+                }
+                
+                .down-btn
+                {
+                    background-color: white;
+                    border:2px solid #029d9d;
+                    color: black;
+                }
+                
+	</style>
+</head>
+<body >
+
+   
+   	   <div class="row" style="background-color: #029d9d; height: 90px;">
+<div class="container-fluid">
+           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">The Great Escape&nbsp;<img src="travel.jpg" class="rounded-circle" alt="Bootstrap" width="50" height="50">
+    	</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tableindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#029d9d;">
+    	<div class="offcanvas-header">
+    		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    	</div>
+    	<div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-center flex-grow-1 ">
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#home" href="#">Home</a>
+        </li>&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#destinations">Destinations</a>
+        </li>&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#packages">Popular Packages</a>
+        </li>&emsp;&emsp;&emsp;&emsp;
+         <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#about">About Us</a>
+        </li>&emsp;&emsp;&emsp;&emsp;
+        <li class="nav-item">
+          <a href="booking.html"><button type="button" class="btn btn-light btn-outline-dark">Booking</button></a>
+        </li>
+        </ul>
+   </div>
+    </div>
+  </div>
+</nav>	
+           </div>
+           </div>   	   	
+   	   </div>
+   
+
+<!-- Starting of the next row -->
+       <div id="home">
+   	   <div class="container mt-5">
+   	   	<div class="row">
+   	   		<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+   	   			<br><br>
+   	   		<div class="mt-5 pt-5">	
+   	   	<p data-aos="fade-down" data-aos-duration="1000" style="font-family: Brush Script MT; font-size: 37px; color:#fcc603; padding: 0; margin: 0;">Explore Your Travel</p>
+
+   	   	<p style="font-size: 50px; letter-spacing: -1px; word-spacing:1px; font-family:ff-abril-fatface;padding: 0; margin: 0; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000">TRUSTED TRAVEL<br>AGENCY</p>
+   	   	<p class="pt-1" style="font-family:arial;">
+   	   	“Remember that happiness is a way of travel, not a destination.”</p>
+   	   	</div><br>
+   	   	<div><a href="#contact"><button type="button" class="btn btn-lg btnn">Contact Us</button></a>&emsp;<button type="button" class="btn btn-lg btnnn">Learn More</button></div><br>
+   	   </div>
+   	   <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12">
+   	   	<img src="shape-1.png" class="img-fluid square d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block"><div class="row" style="height: 65%;"></div>
+   	   	<img src="shape-3.png" class="img-fluid square d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+   	   	</div>
+   	     
+
+   	   <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+   	   	<img src="travel.png" data-aos="flip-left" data-aos-duration="2000" class="img-fluid">
+   	   </div>
+         <div class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-xs-12">
+         	<div class="row" style="height: 30%;"></div>
+   	   	<img src="shape-2.png" class="img-fluid square d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+   	   </div>
+       </div>
+      </div>
+  </div>
+  
+           
+           
+           <div class="row" style="height: 50%;"></div>
+
+<div id="destinations">
+    <br><br>
+          <div class="row">
+
+              	<div class="col-xl-12 col-xs-12 col-sm-12">
+              		
+              	      <p class="text-center" style="font-family: Brush Script MT; color:#fcc603; font-size:37px;">Destinations</p>	
+              	      <h2 class="h2 section-title text-center" style="font-size:50px; font-family:Copperplate; font-weight:bold;">Choose Your Place</h2>
+              	</div>
+          </div><br><br>
+
+
+    <div class="container">
+   		<div class="row">
+   			
+   			 	<div class="col-xl-6 col-xs-12 col-md-12">
+   			 <section class="section destination">
+   			 	  <ul class="destination-list">
+   			 	  	<li class="w-100">
+   			 	  		<a href="#" class="destination-card"><figure><img src="hari.jpg" class="img-fluid tour1 w-100 h-100"></figure>
+   			 	  			<div class="card-content">
+   			 	  				<p class="card-subtitle">Male</p>
+   			 	  				<h3 class="h3 card-title">Maldives</h3>
+   			 	  			</div>
+   			 	  		</a>
+   			 	  	</li>
+   			 	  </ul>
+   			 	  </section>	
+   			 	</div>
+                    
+
+                    <div class="col-xl-6 col-xs-12 col-md-12">
+   			 <section class="section destination">
+   			 	  <ul class="destination-list">
+   			 	  	<li class="w-100">
+   			 	  		<a href="#" class="destination-card"><figure><img src="newzz.jpg" class="img-fluid tour1 w-125 h-125"></figure>
+   			 	  			<div class="card-content">
+   			 	  				<p class="card-subtitle">Bangkok</p>
+   			 	  				<h3 class="h3 card-title">Thailand</h3>
+   			 	  			</div>
+   			 	  		</a>
+   			 	  	</li>
+   			 	  </ul>
+   			 	  </section>	
+   			 	</div>
+             </div>
+            
+            <div class="row">
+            	<div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 col-xs-12">
+            		<section class="section destination">
+   			 	  <ul class="destination-list">
+   			 	  	<li class="w-150">
+   			 	  		<a href="#" class="destination-card"><figure><img src="destination-3.jpg" class="img-fluid tour1 w-100 h-100"></figure>
+   			 	  			<div class="card-content">
+   			 	  				<p class="card-subtitle">KualaLumpur</p>
+   			 	  				<h3 class="h3 card-title">Malaysia</h3>
+   			 	  			</div>
+   			 	  		</a>
+   			 	  	</li>
+   			 	  </ul>
+   			 	  </section>	
+            	</div>
+                <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 col-xs-12">
+            		<section class="section destination">
+   			 	  <ul class="destination-list">
+   			 	  	<li class="w-150">
+   			 	  		<a href="#" class="destination-card"><figure><img src="destination-4.jpg" class="img-fluid tour1 w-100 h-100"></figure>
+   			 	  			<div class="card-content">
+   			 	  				<p class="card-subtitle">Kathmandu</p>
+   			 	  				<h3 class="h3 card-title">Nepal</h3>
+   			 	  			</div>
+   			 	  		</a>
+   			 	  	</li>
+   			 	  </ul>
+   			 	  </section>	
+            	</div>
+                <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12 col-xs-12">
+            		<section class="section destination">
+   			 	  <ul class="destination-list">
+   			 	  	<li class="w-150">
+   			 	  		<a href="#" class="destination-card"><figure><img src="destination-5.jpg" class="img-fluid tour1 w-100 h-100"></figure>
+   			 	  			<div class="card-content">
+   			 	  				<p class="card-subtitle">Jakarta</p>
+   			 	  				<h3 class="h3 card-title">Indonesia</h3>
+   			 	  			</div>
+   			 	  		</a>
+   			 	  	</li>
+   			 	  </ul>
+   			 	  </section>	
+            	</div>
+
+            </div>
+            <br>
+
+         <hr style="background-color:#029d9d;">
+
+      </div>
+ </div>
+ <br>
+
+      <!-- End of the section desitinations -->
+<div id="packages">
+<div class="container">
+	<div class="row">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-xs-12">
+			<p style="font-family:Brush Script MT; font-size:37px; color:#fcc603;" class="text-center">Featured Tours</p>
+			<h2 class="text-center" style="font-family: ff-abril-fatface; font-weight:bold; font-size: 50px;">Most Popular Tours</h2>
+		</div>
+	</div>
+</div><br><br>
+
+<div class="container">
+	<div class="row" >
+		<div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
+           <div class="card" data-aos="flip-left" data-aos-duration="2000">
+
+  				<img src="popular-1.jpg" class="card-img-top" title="Nepal" alt="...">
+                     <span class="card-badge text-center">
+                     	<i class="fa fa-clock-o" style="font-size:25px;color:white"></i><br>12 Days
+                     </span>
+  				<br><br>
+
+  			<div class="card-body">
+  				
+                         <span class="card-badge1">
+                         	From $50.00
+                         </span>
+                        <span class="card-badge2">
+                         	<span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+									star_half
+								</span>
+                         </span>
+    				     
+    					<p class="card-text" style="font-weight:bold;">A good traveler has no fixed plans and is not intent on arriving.</p>
+    					<p>Kuala Lumpur, Malaysia</p>
+    					
+  			</div>
+			</div>
+
+		</div>
+		<div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
+
+			<div class="card" data-aos="flip-left" data-aos-duration="2000">
+  				<img src="popular-2.jpg" class="card-img-top" title="Malaysia" alt="...">
+                     <span class="card-badge text-center">
+                     	<i class="fa fa-clock-o" style="font-size:25px;color:white"></i><br>10 Days
+                     </span>
+  				<br><br>
+  			<div class="card-body">
+                          <span class="card-badge1">
+                         	From $50.00
+                         </span>
+                         <span class="card-badge2">
+                                         
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+									star_half
+								</span>
+                         </span>
+    					
+    					<p class="card-text" style="font-weight:bold;">A good traveler has no fixed plans and is not intent on arriving.</p>
+    				<p>Kuala Lumpur, Malaysia</p>
+    					
+  			</div>
+			</div>
+
+		</div>
+		<div class="col-xl-4 col-lg-6 col-md-6 col-xs-12">
+			<div class="card" data-aos="flip-left" data-aos-duration="2000">
+  				<img src="popular-3.jpg" title="NewzLand" class="card-img-top" alt="...">
+                     <span class="card-badge text-center">
+                     	<i class="fa fa-clock-o" style="font-size:25px;color:white"></i><br>15 Days
+                     </span>
+  				<br><br>
+  			<div class="card-body">
+
+                          <span class="card-badge1">
+                         	From $50.00
+                         </span>
+                         <span class="card-badge2">
+                                         
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+                                         <span class="material-symbols-outlined">
+                                             grade
+                                         </span>
+
+                                         <span class="material-symbols-outlined">
+									star_half
+								</span>
+                         </span>
+    					
+    					
+    					<p class="card-text" style="font-weight:bold;">A good traveler has no fixed plans and is not intent on arriving.</p>
+    					<p>Kuala Lumpur, Malaysia</p>
+    					
+  			</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div id="about">
+<div class="container">
+   <div class="row">
+   	<div class="col-xl-5 colxs-12 col-md-6 col-sm-6 col-lg-5">
+          <p style="font-family: Brush Script MT; font-size: 42px; color:#fcc603;">
+             About Us	
+          </p>
+          <h2 class="h2" style="font-size:50px; font-family:Copperplate; font-weight:bold;">
+          Explore all tour of the world with us.
+          </h2>
+          <p>
+          	The kingdom of heaven is the most popular travel cordination agency in the world. We codinate your trip so well and the rate also cheap. 
+          </p>
+          <br>
+          <div class="mini-section">
+          	<ul style="list-style-type: none; display: grid;gap: 20px;">
+          		<li style="display: flex;align-items: flex-start;gap: 15px;">
+          			<div class="rounded-icon">
+          				<i class="fa fa-umbrella" style="font-size: 24px; color: white;margin-top: 12px; padding-left: 3px;" ></i>
+          			</div>
+          			<div class="abot-item">
+          			    <h5 style="font-weight: bold;">Tour guid</h5>
+          			    <p>Our tour guids are superb and they will help to see all the destinations in that selected place.</p>	
+          			</div>
+          		</li>
+          		<li style="display: flex;align-items: flex-start;gap: 15px;">
+          			<div class="rounded-icon1">
+          			     <i class="fa fa-eye-slash" style="    font-size: 24px; color: white;margin-top: 12px; padding-left: 3px;"></i>	
+          			</div>
+          			<div class="abot-item">
+          			    <h5 style="font-weight: bold;">Friendly Price</h5>
+          			    <p>The price is not a big problrm here. because here,the packages are very cheap rated</p>	
+          			</div>
+          		</li>
+          		<li style="display: flex;align-items: flex-start;gap: 15px;">
+          			<div class="rounded-icon2">
+          			  <i class="fa fa-thumbs-up" style="font-size: 24px; color: white;margin-top: 12px; padding-left: 3px;"></i>	
+          			</div>
+          			<div class="abot-item">
+          			    <h5>Relaiable Tour</h5>
+          			    <p>it was a relaiable tour package.</p>	
+          			</div>
+          		</li>
+          	</ul>
+          </div>
+   	</div>
+   	<div class="col-xl-7 colxs-12 col-md-6 col-sm-6 col-lg-7">
+   		<img src="about-banner.png" class="img-fluid mt-3" data-aos="zoom-in-down"  data-aos-easing="linear" data-aos-duration="1500">
+   	</div>
+   </div>	
+</div>
+</div>
+<br>
+<br>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xl-12 col-sm-12 col-xs-12">
+			<div class="owl-carousel owl-theme">
+          <div class="item">
+          	   <a href="booking.html"><div class="card text-bg-dark">
+  				<img src="card1.jpg" alt="...">
+  				<div class="card-img-overlay">
+    					<h5 class="card-title text-center" style="font-size: 27px;"> 4D | 5N</h5>
+    				</div>
+    				<div>	
+    				</div>
+    			</div></a>
+          </div>
+          <div class="item">
+          	<a href="booking.html"><div class="card text-bg-dark">
+  				<img src="card2.jpg"  alt="...">
+  				<div class="card-img-overlay">
+    					<h5 class="card-title text-center" style="font-size: 27px;"> 4N | 5D</h5>
+    					
+  				</div>
+				</div></a>
+          </div>
+          <div class="item">
+             <div class="item">
+          	<a href="booking.html"><div class="card text-bg-dark">
+  				<img src="card3.jpg"  alt="...">
+  				<div class="card-img-overlay">
+    					<h5 class="card-title text-center" style="font-size: 27px;"> 3D | 2N</h5>
+    					
+  				</div>
+				</div></a>
+                 </div>	
+          </div>
+          <div class="item">
+          	
+          	<a href="booking.html"><div class="card text-bg-dark">
+  				<img src="card4.jpg" alt="...">
+  				<div class="card-img-overlay">
+    					<h5 class="card-title text-center" style="font-size: 27px;"> 1D | 2N</h5>
+  				</div>
+				</div></a>
+          </div>
+             
+          </div>
+		</div>
+	     </div>
+</div>
+
+<br><br>
+<div class="container">
+     <div class="row">
+     	<div class="col-lg-12 col-sm-12 col-xs-12">
+     		<div class="button">
+
+     			<a href=" booking.html" class="btn booking-btn btn-lg" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="For Booking Click Here"> Book Now</a>
+                <button type="button" class="btn btn-lg btn-secondary down-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Login
+               </button>
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><b>The Great Escape</b></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="modal-body">
+       <div class="row">
+         <div class="col-xl-12 col-xs-12">
+           <img src="ladakh.jpg" title="ladakh art" style="width: 320px; height:auto;"><br><h4>Welcome !</h4>
+            <p>The <b>The Great Escape</b> Is the most top Travel agecies in INDIA. You can travel were ever you want by a customer of Us. </p>
+         </div>&nbsp;
+         <div class="col-xl-12 col-xs-12">
+           <p><b>Login</b></p>
+           <form name="contact" method="post" action="#" onsubmit="return validateForm">
+           <input type="text" name="text" placeholder="Name">
+           <input type="number" name="number" placeholder="Number"><br><br>
+           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="submit" value="submit" class="btn btn-secondary">Submit</button>
+           </form>
+         </div>
+       </div> 
+</div>
+</div>
+  </div>
+</div>
+      
+     		</div>
+              <br>
+     		<hr>
+     	</div>
+     </div>
+</div>
+<br>
+
+	<footer>
+	    <div class="footer">
+	    	<div class="container">
+	    	<div class="row">
+           
+	    	 <div class="col-xl-3 col-lg-3 col-md-4 col-xs-12 col-sm-12">
+	    	 	<ul class="footer-list ">
+	    	 		<li style="font-weight: 900; font-size: 20px;"><b>Top Destinations</b></li>
+	    	 		<br>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Indonesia,Jakarta</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Maldives,Male</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Australia ,Canberra</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Thailand,Bangkok</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Morocco,Rabat</a>
+	    	 		</li>
+	    	 	</ul>
+	    
+	    </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-xs-12 col-sm-12">
+	    	 	<ul class="footer-list ">
+	    	 		<li style="font-weight: 900; font-size: 20px;"><b>Categories</b></li>
+	    	 		<br>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Travel</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Lifestyle</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Fashion</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Education</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Food & drink</a>
+	    	 		</li>
+	    	 	</ul>
+	    
+	    </div>	
+          <div class="col-xl-3 col-lg-3 col-md-4 col-xs-12 col-sm-12">
+	    	 	<ul class="footer-list">
+	    	 		<li style="font-weight: 900; font-size: 20px;"><b>Quick Links</b></li>
+	    	 		<br>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">About</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Contact</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Tour</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Booking</a>
+	    	 		</li>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">Terms & conditions</a>
+	    	 		</li>
+	    	 	</ul>
+	    	 </div>	
+	    	 <div class="col-xl-3 col-lg-3 col-md-4 col-xs-12 col-sm-12">
+	    	 	<ul class="footer-list">
+	    	 		<li style="font-weight: 900; font-size: 20px;"><b>Get a newsletter</b></li>
+	    	 		<br>
+	    	 		<li>
+	    	 			<a id="footer-link" href="#">For the latest details and trips, travel no furthur than your inbox</a>
+	    	 		</li>
+	    	 		<br>
+	    	 		<li>
+	    	 			<form class="newsletter-form" onsubmit="return validateForm()">
+	    	 				<input type="email" name="email" placeholder="Email" class="newsletter-input">
+	    	 				<button type="submit" class="btn footer-btn ">Subscribe</button>
+	    	 			</form>
+	    	 		</li>
+	    	 		
+	    	 	</ul>
+	    	 </div>	
+	</div>
+	<br><br><br>
+	<div class="row">
+
+		<div class="col-xl-3 col-lg-3 col-md-6 col-xs-12">
+			<p style="color: white; font-size: 28px; font-weight: bold; pointer-events: none;font-variant: small-caps;">The Great Escape</p>
+		</div>
+		<div class="col-xl-6 col-lg-6 col-md-6 col-xs-6">
+			<p class="text-center mt-3">&copy; 2022 <a href="#" class="copyright-link">TheGreatEscape</a>. All Rights Reserved</p>
+		</div>
+
+		<div class="col-xl-3 col-lg-3 col-md-6 col-xs-6 mt-3">
+			<ul style="display:flex; gap: 15px; list-style-type: none;">
+				<li>
+					<a href="" class="social-link">
+						<i class="fa fa-facebook-square" style="font-size:24px; color:white;"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-link">
+						<i class="fa fa-instagram" style="font-size:24px; color:white;"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-link">
+						<i class="fa fa-twitter" style="font-size:24px; color:white;"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-link">
+						<i class="fa fa-google" style="font-size:24px; color:white;"></i>
+					</a>
+				</li>
+				<li>
+					<a href="" class="social-link">
+						<i class="fa fa-whatsapp" style="font-size:24px; color:white;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+</footer>
+<button class="btn" onclick="topFunction()" id="myBtn" title="Go to top">
+	<i class="fa fa-arrow-circle-up" style="font-size:24px"></i>
+</button>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+             AOS.init();
+           </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    center:true,
+    slideSpeed: 300,
+    autoplayTimeout:3000,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        item:1
+      },
+      768:{
+        item:3
+      },
+      992:{
+        item:5
+      }
+    }
+  });
+</script>
+
+
+
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scroll()};
+
+function scroll() {
+  if ( document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
